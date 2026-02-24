@@ -1,0 +1,10 @@
+{
+  "name": "ventrox-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "npx clean-css-cli -o css/styles.min.css css/styles.css",
+    "build:js": "npx terser js/script.js -o js/script.min.js -c -m",
+    "build": "npm run build:css && npm run build:js"
+  }
+}
