@@ -22,12 +22,15 @@
             <ul class="site-header__menu-list">
                 <li><a href="/index.html" class="site-header__menu-link">Home</a></li>
                 <li><a href="/technology.html" class="site-header__menu-link">Technology</a></li>
-                <li><a href="/applications.html" class="site-header__menu-link">Applications</a></li>
+                <li><a href="/applications.html" class="site-header__menu-link">Industries</a></li>
                 <li><a href="/about.html" class="site-header__menu-link">About</a></li>
                 <li><a href="/contact.html" class="site-header__menu-link is-current">Contact Us</a></li>
             </ul>
         </nav>
         <div class="site-header__bar">
+            <a href="/index.html" class="site-logo">
+                <img src="/assets/logo.svg" alt="Ventrox Logo" class="site-logo-img">
+            </a>
             <a href="/contact.html#contact-form" class="site-header__cta">Get a Quote</a>
             <button type="button" class="site-header__burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
                 <span class="site-header__burger-bar"></span>
@@ -52,13 +55,13 @@
                     <div class="section-divider section-divider--dark section-divider--centered"></div>
                 </div>
                 <div class="contact-form-card">
-                    <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+                    <form class="contact-form" name="contact" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field" novalidate>
                         <input type="hidden" name="form-name" value="contact">
                         <p style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;" aria-hidden="true">
                             <label for="contact-bot">Don't fill this out if you're human</label>
                             <input type="text" id="contact-bot" name="bot-field" tabindex="-1" autocomplete="off">
                         </p>
-                        <input type="hidden" name="redirect" value="/thank-you">
+                        <input type="hidden" name="redirect" value="/thank-you" />
                         <div class="contact-form-field">
                             <label for="contact-name">Full Name</label>
                             <input type="text" id="contact-name" name="name" required>
