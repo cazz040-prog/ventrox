@@ -1515,6 +1515,26 @@ main.technology-page .solutions-apart-section:last-child {
     line-height: 1.6;
 }
 
+/* Technology page - Small laptops (1366px) */
+@media (max-width: 1366px) {
+    .technology-content {
+        grid-template-columns: 7fr 13fr;
+        gap: 32px;
+    }
+
+    .technology-title {
+        font-size: clamp(36px, 3vw, 48px);
+    }
+
+    .attributes-grid {
+        gap: 32px;
+    }
+
+    .technology-attributes-col {
+        max-width: 600px;
+    }
+}
+
 /* Technology page - Tablet */
 @media (max-width: 1023px) {
     .technology-section {
