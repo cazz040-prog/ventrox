@@ -202,16 +202,10 @@ body {
     color: var(--color-primary-dark);
 }
 
-.site-logo {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.site-logo-img {
-    display: block;
-    height: 160px;
+.logo img {
+    height: 150px;
     width: auto;
+    display: block;
 }
 
 .site-header__cta {
@@ -292,12 +286,6 @@ body {
         background: transparent;
         z-index: 101;
         overflow: visible;
-    }
-}
-
-@media (max-width: 1024px) {
-    .site-logo-img {
-        height: 120px;
     }
 }
 
@@ -451,8 +439,8 @@ body {
         padding: var(--space-5) var(--space-5);
     }
 
-    .site-logo-img {
-        height: 90px;
+    .logo img {
+        height: 100px;
     }
 
     .applications-page .applications-main,
