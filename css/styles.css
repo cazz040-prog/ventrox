@@ -1535,6 +1535,18 @@ main.technology-page .solutions-apart-section:last-child {
     }
 }
 
+/* Technology page - Desktop: more breathing room below header */
+@media (min-width: 1024px) {
+    .technology-section {
+        padding-top: 140px;
+    }
+
+    .technology-section .section-divider {
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+}
+
 /* Technology page - Tablet */
 @media (max-width: 1023px) {
     .technology-section {
