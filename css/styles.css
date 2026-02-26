@@ -436,11 +436,17 @@ body {
 @media (max-width: 768px) {
     .site-header__bar {
         min-height: 88px;
-        padding: var(--space-5) var(--space-5);
+        padding: var(--space-5) 16px;
     }
 
-    .logo img {
-        height: 100px;
+    .logo img,
+    .site-logo-img {
+        height: 52px;
+        width: auto;
+    }
+
+    .mobile-menu-toggle {
+        font-size: 24px;
     }
 
     .applications-page .applications-main,
@@ -731,6 +737,24 @@ body {
     display: flex;
     width: 100%;
     min-height: 500px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.expertise-col,
+.expertise-wrapper,
+.expertise-card-wrapper {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.expertise-cards {
+    background: transparent;
+    box-shadow: none;
+    border: none;
 }
 
 .expertise-left {
@@ -787,6 +811,8 @@ body {
     position: relative;
     opacity: 0;
     transform: translateY(30px);
+    box-shadow: none;
+    border: none;
     transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 1s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: visible;
 }
@@ -827,7 +853,7 @@ body {
     border-radius: 18px;
     padding: 48px;
     width: 100%;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.04);
+    box-shadow: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1047,26 +1073,10 @@ body {
     }
 }
 
-/* Expertise - Desktop hover (refined elevation) */
+/* Expertise - Desktop */
 @media (min-width: 1024px) {
     .expertise-cards {
         align-items: stretch;
-    }
-
-    .expertise-card.is-visible {
-        transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease;
-    }
-
-    .expertise-card-body {
-        transition: box-shadow 0.3s ease;
-    }
-
-    .expertise-card.is-visible:hover {
-        transform: translateY(-6px);
-    }
-
-    .expertise-card.is-visible:hover .expertise-card-body {
-        box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08), 0 6px 16px rgba(0, 0, 0, 0.05);
     }
 }
 
