@@ -22,6 +22,7 @@
     const burger = document.querySelector('.site-header__burger');
     const mobileMenu = document.querySelector('.mobile-menu');
     const closeBtn = document.querySelector('.close-btn');
+    const mobileMenuClose = document.querySelector('.mobile-menu-close');
     const backdrop = document.getElementById('mobile-drawer-backdrop');
 
     if (burger && mobileMenu) {
@@ -43,6 +44,12 @@
 
         if (closeBtn) {
             closeBtn.addEventListener('click', function () {
+                setMenuOpen(false);
+            });
+        }
+
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener('click', function () {
                 setMenuOpen(false);
             });
         }
