@@ -56,13 +56,11 @@
                     <div class="section-divider section-divider--dark section-divider--centered"></div>
                 </div>
                 <div class="contact-form-card">
-                    <form class="contact-form" name="contact" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field" novalidate>
-                        <input type="hidden" name="form-name" value="contact">
-                        <p style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;" aria-hidden="true">
-                            <label for="contact-bot">Don't fill this out if you're human</label>
-                            <input type="text" id="contact-bot" name="bot-field" tabindex="-1" autocomplete="off">
+                    <form class="contact-form" name="contact" method="POST" action="/thank-you.html" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+                        <input type="hidden" name="form-name" value="contact" />
+                        <p class="sr-only" style="display:none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                         </p>
-                        <input type="hidden" name="redirect" value="/thank-you" />
                         <div class="contact-form-field">
                             <label for="contact-name">Full Name</label>
                             <input type="text" id="contact-name" name="name" required>
