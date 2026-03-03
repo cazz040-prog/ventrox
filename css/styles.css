@@ -1071,19 +1071,40 @@ body {
     }
 
     .expertise-card {
-        width: 92%;
+        width: calc(100% - 32px);
         max-width: none;
         justify-self: center;
+        margin: 0 16px;
     }
 
     .expertise-card-image-wrap {
         width: 132px;
         height: 132px;
-        margin-bottom: -37px;
+        margin-bottom: -44px;
     }
 
     .expertise-card-body {
-        padding: 32px;
+        padding: 28px;
+    }
+
+    .expertise-card h3,
+    .expertise-card-title {
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
+
+    .expertise-card-list-wrap {
+        max-width: 220px;
+    }
+
+    .expertise-card-list {
+        padding-left: 16px;
+    }
+
+    .expertise-card-list li {
+        padding-left: 12px;
+        margin-bottom: 10px;
+        line-height: 1.5;
     }
 
     .expertise-cta {
