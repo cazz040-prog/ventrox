@@ -1,0 +1,15 @@
+# Netlify configuration
+# Publish from repository root (default)
+[build]
+  publish = "."
+
+# Redirect /thank-you (and variants) to /thank-you.html (handles form redirects and direct links)
+[[redirects]]
+  from = "/thank-you"
+  to = "/thank-you.html"
+  status = 200
+
+[[redirects]]
+  from = "/thank-you/"
+  to = "/thank-you.html"
+  status = 200
