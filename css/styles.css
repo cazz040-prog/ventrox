@@ -2256,6 +2256,7 @@ ul.about-mission-support li:last-child {
     width: 100%;
     background-color: var(--color-bg-white);
     padding: var(--space-16) 0;
+    padding-top: 155px;
 }
 
 .privacy-inner,
@@ -2341,7 +2342,7 @@ ul.about-mission-support li:last-child {
 @media (max-width: 600px) {
     .privacy-section,
     .terms-section {
-        padding: 40px 0;
+        padding: 110px 0 40px;
     }
 }
 
