@@ -21,8 +21,7 @@
     /* Site header – mobile menu (off-canvas drawer + backdrop) */
     const burger = document.querySelector('.site-header__burger');
     const mobileMenu = document.querySelector('.mobile-menu');
-    const closeBtn = document.querySelector('.close-btn');
-    const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    const menuClose = document.querySelector('.menu-close');
     const backdrop = document.getElementById('mobile-drawer-backdrop');
 
     if (burger && mobileMenu) {
@@ -34,6 +33,7 @@
                 backdrop.setAttribute('aria-hidden', !open);
             }
             burger.setAttribute('aria-expanded', open);
+            burger.setAttribute('aria-label', open ? 'Close menu' : 'Toggle menu');
             document.documentElement.classList.toggle('menu-open', open);
             document.body.classList.toggle('menu-open', open);
         }
@@ -42,14 +42,8 @@
             setMenuOpen(!mobileMenu.classList.contains('open'));
         });
 
-        if (closeBtn) {
-            closeBtn.addEventListener('click', function () {
-                setMenuOpen(false);
-            });
-        }
-
-        if (mobileMenuClose) {
-            mobileMenuClose.addEventListener('click', function () {
+        if (menuClose) {
+            menuClose.addEventListener('click', function () {
                 setMenuOpen(false);
             });
         }
