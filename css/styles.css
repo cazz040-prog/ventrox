@@ -458,10 +458,6 @@ body {
         width: auto;
     }
 
-    .mobile-menu-toggle {
-        font-size: 24px;
-    }
-
     .applications-page .applications-main,
     .about-page .about-main,
     .technology-page {
@@ -891,27 +887,26 @@ body {
 }
 
 .expertise-card-list-wrap {
-    max-width: 230px;
+    max-width: 250px;
     margin: 0 auto;
     text-align: left;
 }
 
 .expertise-card-list {
     list-style: none;
-    list-style-position: outside;
     padding: 0;
-    padding-left: 22px;
     margin: 0;
     text-align: left;
 }
 
 .expertise-card-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
     font-size: 16px;
     line-height: 1.65;
     color: var(--color-text);
-    padding-left: 18px;
-    position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .expertise-card-list li:last-child {
@@ -920,11 +915,10 @@ body {
 
 .expertise-card-list li::before {
     content: "";
-    position: absolute;
-    left: 0;
-    top: 0.5em;
+    flex-shrink: 0;
     width: 10px;
     height: 10px;
+    margin-top: 0.5em;
     border-radius: var(--radius-full);
     background-color: var(--color-accent);
 }
@@ -1089,17 +1083,13 @@ body {
     }
 
     .expertise-card-list-wrap {
-        max-width: 220px;
-    }
-
-    .expertise-card-list {
-        padding-left: 16px;
+        max-width: 240px;
     }
 
     .expertise-card-list li {
-        padding-left: 12px;
-        margin-bottom: 10px;
-        line-height: 1.5;
+        gap: 12px;
+        margin-bottom: 16px;
+        line-height: 1.6;
     }
 
     .expertise-cta {
