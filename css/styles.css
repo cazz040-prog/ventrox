@@ -805,7 +805,7 @@ body {
 
 .expertise-cards {
     display: flex;
-    gap: var(--space-10);
+    gap: 40px;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
@@ -813,6 +813,7 @@ body {
 
 .expertise-card {
     width: 280px;
+    max-width: 340px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -836,14 +837,13 @@ body {
 .expertise-card:nth-child(3).is-visible { transition-delay: 0.4s; }
 
 .expertise-card-image-wrap {
-    width: 176px;
-    height: 176px;
+    width: 152px;
+    height: 152px;
     border-radius: var(--radius-full);
     overflow: hidden;
-    border: 6px solid var(--color-bg);
-    box-shadow: 0 0 0 4px #fff, 0 8px 20px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     background-color: var(--color-primary);
-    margin-bottom: -47px;
+    margin-bottom: -36px;
     position: relative;
     z-index: 2;
     flex-shrink: 0;
@@ -859,10 +859,10 @@ body {
 
 .expertise-card-body {
     background-color: var(--color-bg);
-    border-radius: 18px;
-    padding: 48px;
+    border-radius: 16px;
+    padding: 28px 24px;
     width: 100%;
-    box-shadow: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -872,10 +872,10 @@ body {
 }
 
 .expertise-card-title {
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 500;
     color: var(--color-text);
-    margin: 0 0 22px;
+    margin: 0 0 18px;
     padding: 0;
     text-align: center;
     letter-spacing: 0.3px;
@@ -883,18 +883,18 @@ body {
 }
 
 .expertise-card h3 {
-    margin-top: 32px;
+    margin-top: 28px;
 }
 
 .expertise-card-list-wrap {
-    max-width: 250px;
+    max-width: 260px;
     margin: 0 auto;
     text-align: left;
 }
 
 .expertise-card-list {
     list-style: none;
-    padding: 0;
+    padding: 0 0 0 18px;
     margin: 0;
     text-align: left;
 }
@@ -902,11 +902,11 @@ body {
 .expertise-card-list li {
     display: flex;
     align-items: flex-start;
-    gap: 14px;
+    gap: 12px;
     font-size: 16px;
-    line-height: 1.65;
+    line-height: 1.6;
     color: var(--color-text);
-    margin-bottom: 20px;
+    margin-bottom: 11px;
 }
 
 .expertise-card-list li:last-child {
@@ -916,20 +916,20 @@ body {
 .expertise-card-list li::before {
     content: "";
     flex-shrink: 0;
-    width: 10px;
-    height: 10px;
-    margin-top: 0.5em;
+    width: 8px;
+    height: 8px;
+    margin-top: 0.55em;
     border-radius: var(--radius-full);
-    background-color: var(--color-accent);
+    background-color: rgba(62, 124, 177, 0.65);
 }
 
 @media (min-width: 1200px) {
     .expertise-card {
-        max-width: 360px;
+        max-width: 340px;
     }
 
     .expertise-card-body {
-        padding: 40px 32px;
+        padding: 28px 24px;
     }
 }
 
@@ -971,21 +971,22 @@ body {
     }
 
     .expertise-cards {
-        gap: clamp(16px, 1.5vw, 20px);
+        gap: 40px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
     .expertise-card {
         width: 100%;
+        max-width: 340px;
         min-width: 0;
     }
 
     .expertise-card-image-wrap {
-        width: clamp(124px, 11vw, 154px);
+        width: clamp(124px, 11vw, 152px);
         aspect-ratio: 1;
         height: auto;
-        margin-bottom: clamp(-38px, -3.2vw, -44px);
+        margin-bottom: clamp(-32px, -2.8vw, -36px);
     }
 }
 
@@ -1012,17 +1013,17 @@ body {
 
     .expertise-card {
         width: 100%;
-        max-width: 280px;
+        max-width: 340px;
     }
 
     .expertise-card-body {
-        padding: 40px;
+        padding: 28px 24px;
     }
 
     .expertise-card-image-wrap {
-        width: 143px;
-        height: 143px;
-        margin-bottom: -42px;
+        width: 140px;
+        height: 140px;
+        margin-bottom: -34px;
     }
 }
 
@@ -1056,7 +1057,7 @@ body {
 
     .expertise-cards {
         grid-template-columns: 1fr;
-        gap: 28px;
+        gap: 32px;
     }
 
     .expertise-card {
@@ -1069,26 +1070,30 @@ body {
     .expertise-card-image-wrap {
         width: 132px;
         height: 132px;
-        margin-bottom: -44px;
+        margin-bottom: -36px;
     }
 
     .expertise-card-body {
-        padding: 28px;
+        padding: 28px 24px;
     }
 
     .expertise-card h3,
     .expertise-card-title {
-        margin-top: 20px;
-        margin-bottom: 16px;
+        margin-top: 24px;
+        margin-bottom: 18px;
     }
 
     .expertise-card-list-wrap {
-        max-width: 240px;
+        max-width: 260px;
+    }
+
+    .expertise-card-list {
+        padding-left: 18px;
     }
 
     .expertise-card-list li {
         gap: 12px;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
         line-height: 1.6;
     }
 
